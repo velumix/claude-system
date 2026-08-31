@@ -21,3 +21,4 @@ jobs:
           exempt-issue-labels: "pinned,help wanted"
           stale-issue-message: "Still interested? Comment to keep this open — otherwise it will auto-close in 7 days."
           stale-issue-label: "stale"
+          debug-only: true
