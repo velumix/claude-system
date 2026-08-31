@@ -108,6 +108,9 @@ node cli/dist/index.js --help   # should render in Claude Code theme (cyan/gray,
 
 `main` requires `validate.yml` to pass before merge. No direct pushes for Systems — use the fork + PR flow above. Never bypass CI.
 
+## Stale `good first issue` handling
+Issues labeled `good first issue` are automatically marked `stale` after 30 days without activity and closed 7 days later (exempt if `pinned` or `help wanted`) — comment to keep it open; see `.github/workflows/stale.yml`.
+
 ## Trust model
 
 `permissions` are **self-declared by authors and reviewed by maintainers, not independently verified at runtime**. `setup.sh` is reviewed and gated by a **one-time consent prompt on first `claude-system run`** — never silently executed. Treat installs with the same scrutiny as any third-party package. See [`docs/security.md`](docs/security.md) and [`SECURITY.md`](SECURITY.md).
